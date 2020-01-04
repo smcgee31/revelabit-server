@@ -1,0 +1,21 @@
+{
+  "extends": ["vstg", "prettier"],
+  "env": {
+    "es6": true,
+    "node": true
+  },
+
+  "parserOptions": {
+    "ecmaVersion": 10
+  },
+
+  "plugins": ["prettier", "filenames"],
+
+  "rules": {
+    "prettier/prettier": ["error"],
+    "consistent-return": "off",
+    "no-magic-numbers": "off",
+    "strict": ["error", "global"],
+    "filenames/match-regex": ["error", "^[a-z0-9-]+$"]
+  }
+}
