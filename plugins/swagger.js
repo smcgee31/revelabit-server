@@ -1,6 +1,7 @@
 'use strict';
 
 const swagger = require('hapi-swagger');
+const { host, port } = require('../config');
 
 module.exports = {
   plugin: swagger,
@@ -12,10 +13,12 @@ module.exports = {
       title: 'Marco-Polo API Documentation',
     },
 
+    schemes: host === 'localhost' ? ['http'] : ['https'],
+    host: `${host}:${port}`,
     documentationPath: '/docs',
     grouping: 'tags',
     sortEndpoints: 'method',
-    sortTags: 'name',
+    sortTags: 'alpha',
 
     securityDefinitions: {
       Bearer: {

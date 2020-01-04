@@ -1,14 +1,13 @@
-/* eslint-disable no-console, no-process-exit */
-
 'use strict';
 
+const { host, port } = require('./config');
 const Hapi = require('@hapi/hapi');
 const log = require('loglevel');
 const registerPlugins = require('./plugins');
 
 const server = Hapi.server({
-  host: 'localhost',
-  port: 3003,
+  host,
+  port,
   routes: {
     validate: {
       failAction: async (request, h, error) => {
@@ -29,7 +28,7 @@ async function initialize() {
     /* istanbul ignore next */
     if (!module.parent) {
       await server.start();
-      log.info(`Marco-Polo server started...`);
+      log.info(`Marco-Polo server started on port ${host}`);
     }
 
     return server;
