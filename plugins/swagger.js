@@ -10,7 +10,7 @@ module.exports = {
     pathPrefixSize: 2,
 
     info: {
-      title: 'Marco-Polo API Documentation',
+      title: 'Revelabit API Documentation',
     },
 
     schemes: host === 'localhost' ? ['http'] : ['https'],
