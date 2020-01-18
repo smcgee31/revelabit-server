@@ -1,7 +1,7 @@
 {
   "name": "revelabit-server",
   "version": "0.0.1",
-  "description": "Backend for Marco-Polo",
+  "description": "Backend for Revelabit",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

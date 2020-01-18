@@ -1,2 +1,3 @@
 # revelabit-server
-Backend for Marco-Polo
+
+Backend API for Revelabit
