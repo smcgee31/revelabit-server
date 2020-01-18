@@ -29,7 +29,7 @@ async function initialize() {
     /* istanbul ignore next */
     if (!module.parent) {
       await server.start();
-      log.info(`Marco-Polo-Server started on port ${port}`);
+      log.info(`Revelabit-Server started on port ${port}`);
     }
 
     return server;
