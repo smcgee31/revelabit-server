@@ -1,2 +1,2 @@
-# marco-polo-server
+# revelabit-server
 Backend for Marco-Polo
