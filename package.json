@@ -1,5 +1,5 @@
 {
-  "name": "marco-polo-server",
+  "name": "revelabit-server",
   "version": "0.0.1",
   "description": "Backend for Marco-Polo",
   "main": "index.js",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smcgee31/marco-polo-server.git"
+    "url": "git+https://github.com/smcgee31/revelabit-server.git"
   },
   "keywords": [],
   "author": "Steve McGee",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smcgee31/marco-polo-server/issues"
+    "url": "https://github.com/smcgee31/revelabit-server/issues"
   },
-  "homepage": "https://github.com/smcgee31/marco-polo-server#readme",
+  "homepage": "https://github.com/smcgee31/revelabit-server#readme",
   "dependencies": {
     "@hapi/hapi": "^18.4.0",
     "@hapi/inert": "^5.2.2",
