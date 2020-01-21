@@ -1,7 +1,6 @@
 'use strict';
 
 const swagger = require('hapi-swagger');
-const { host, port } = require('../config');
 
 module.exports = {
   plugin: swagger,
@@ -13,8 +12,8 @@ module.exports = {
       title: 'Revelabit API Documentation',
     },
 
-    schemes: host === 'localhost' ? ['http'] : ['https'],
-    host: `${host}:${port}`,
+    schemes: process.env.host === 'localhost' ? ['http'] : ['https'],
+    host: `${process.env.host}:${process.env.port}`,
     documentationPath: '/docs',
     grouping: 'tags',
     sortEndpoints: 'method',

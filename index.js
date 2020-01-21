@@ -1,9 +1,10 @@
 'use strict';
 
-const { host, port } = require('./config');
+require('dotenv').config();
+const { host, port } = process.env;
+const log = require('./log');
 const Hapi = require('@hapi/hapi');
 const registerPlugins = require('./plugins');
-const log = require('./log');
 
 const server = Hapi.server({
   host,
